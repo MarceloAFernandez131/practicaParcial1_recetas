@@ -26,17 +26,17 @@ public abstract class IngredienteDecorador implements IReceta{
 
     @Override
     public String getNombre() {
-        return receta.getNombre() + " con " + receta.getNombreIngrediente();
+        return receta.getNombre() + " con " + this.getNombreIngrediente();
     }
 
-    public abstract String getNombreIngrediente();
+    protected abstract String getNombreIngrediente();
 
     @Override
     public Integer getValorNutricional() {
-        return receta.getValorNutricional() + receta.getValorAdicional();
+        return receta.getValorNutricional() + this.getValorAdicional();
     }
 
-    public abstract Integer getValorAdicional();
+    protected abstract Integer getValorAdicional();
 
     
     

@@ -53,11 +53,4 @@ public class Receta implements IReceta{
     public Boolean esTradicional() {
         return Boolean.valueOf(aniosTradicion >= 20);
     }
-
-    @Override
-    public String getNombreIngrediente() {}
-
-    @Override
-    public Integer getValorAdicional() {}
-
 }

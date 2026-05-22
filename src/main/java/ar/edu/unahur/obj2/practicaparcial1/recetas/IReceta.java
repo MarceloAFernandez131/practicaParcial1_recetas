@@ -6,6 +6,4 @@ public interface IReceta {
     String getAutor();
     Integer getAniosTradicion();
     Boolean esTradicional();
-    String getNombreIngrediente();
-    Integer getValorAdicional();
 }
